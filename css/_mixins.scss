@@ -1,0 +1,8 @@
+$sixe-pc : 1200px;
+$size-gap : 30px;
+
+@mixin inner () {
+    max-width: $sixe-pc;
+    margin: 0 auto;
+    padding: 0 $size-gap/2;
+}

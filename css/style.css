@@ -1,0 +1,127 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  letter-spacing: -0.025em;
+  word-break: keep-all;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.Header .top {
+  background: #373D90;
+}
+.Header .top ul {
+  display: flex;
+}
+.Header .top li {
+  padding: 10px 0;
+  width: 100px;
+  background: #444BAB;
+  color: #ddd;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  text-align: center;
+}
+.Header .header_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.Header .header_wrap h1 {
+  margin: 20px 0 0 0;
+}
+.Header .header_wrap .gnb {
+  display: flex;
+  gap: 30px;
+}
+.Header .header_wrap .gnb > li {
+  position: relative;
+  padding: 30px 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.Header .header_wrap .gnb > li:hover {
+  color: #444BAB;
+}
+.Header .header_wrap .gnb::before {
+  content: "";
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  z-index: 999;
+  height: 0;
+  opacity: 0;
+  transition: 0.5s;
+  box-shadow: 4px 4px 4px rgb(238, 238, 238);
+}
+.Header .header_wrap .gnb:hover::before {
+  opacity: 1;
+  height: 250px;
+}
+.Header .header_wrap .gnb:hover .sub {
+  opacity: 1;
+}
+.Header .header_wrap .sub {
+  position: absolute;
+  top: 150%;
+  left: 0;
+  width: 100%;
+  height: 280px;
+  z-index: 1000;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  color: #5c5c5c;
+  opacity: 0;
+  transition: 0.5s;
+}
+.Header .header_wrap .sub li:hover {
+  color: #444BAB;
+  font-weight: 600;
+}
+.Header .header_wrap .sub::after {
+  content: "";
+  top: -14.9%;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  transform: translate(-50%, 0);
+  z-index: -10;
+  background: #f2f3f7;
+  opacity: 0;
+  transition: 0.3s;
+}
+.Header .header_wrap .sub:hover::after {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
