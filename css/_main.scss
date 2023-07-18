@@ -1,0 +1,318 @@
+.Header {
+    border-bottom: 1px solid #ddd;
+
+    .top {
+        background: $color-top01;
+
+        ul {
+            display: flex;
+            font-size: 15px;
+        }
+
+        li {
+            padding: 10px 0;
+            width: 100px;
+            background: $color-top02;
+            color: rgba(255, 255, 255, 0.589);
+            border: 1px solid rgba(255, 255, 255, 0.164);
+            text-align: center;
+        }
+
+    }
+
+
+    .header_wrap {
+        display: flex;
+        justify-content: space-between;
+
+
+        h1 {
+            margin: 20px 0 0 0;
+        }
+
+        .gnb {
+            display: flex;
+            gap: 30px;
+
+            &>li {
+                position: relative;
+                padding: 30px 30px;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            &>li:hover {
+                color: $color-top02;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 12%;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                border-top: 1px solid #ddd;
+                z-index: 100;
+                height: 0;
+                opacity: 0;
+                transition: 0.5s;
+
+            }
+
+            &:hover::before {
+                opacity: 1;
+                height: 250px;
+            }
+
+
+            &:hover .sub {
+                opacity: 1;
+                height: 250px;
+                visibility: visible;
+            }
+        }
+
+        .sub {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 0;
+            z-index: 100;
+
+            font-size: 15px;
+            text-align: center;
+            line-height: 40px;
+
+            color: #5c5c5c;
+
+            opacity: 0;
+            transition: 0.5s;
+
+            visibility: hidden;
+
+            background: none;
+
+            &:hover {
+                background: #eff0f3;
+            }
+
+            & li:hover {
+                color: $color-top02;
+                font-weight: 600;
+            }
+
+        }
+    }
+}
+
+.MainVisual {
+
+    .MainSlide {
+
+        .itm {
+            height: 80vh;
+        }
+
+        .itm01 {
+            background: url(../images/mvisual-img01.jpg)
+        }
+
+        .itm02 {
+            background: url(../images/mvisual-img02.jpg);
+        }
+
+        .itm03 {
+            background: url(../images/mvisual-img03.jpg);
+        }
+    }
+
+    .swiper-pagination {
+        transform: translate(0, -500%);
+    }
+
+    .swiper-pagination-bullet {
+        width: 70px;
+        height: 5px;
+        text-align: center;
+        font-size: 12px;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 1px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #fff;
+    }
+}
+
+.MainContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30%;
+    z-index: 5;
+
+    padding: 50px 0;
+
+    .content_wrap {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+
+        .itm {
+            position: relative;
+            border: 1px solid #ddd;
+            width: 370px;
+            padding: 50px 0 60px 0;
+            background: #fff;
+
+            .txt {
+                height: 100%;
+
+                .btxt {
+                    font-size: 28px;
+                    font-weight: 500;
+                    color: $color-blue;
+                    margin: 15px 0 20px 0;
+                }
+
+                .stxt {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #686868;
+                    margin: 0 75px;
+                }
+
+                .btns {
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 10%;
+                    transform: translate(-50%, 0);
+                    padding: 10px 20px;
+                    color: #5c5c5c;
+                    border: 1px solid #666;
+                    border-radius: 5px;
+                }
+
+                .dtxt {
+                    font-size: 20px;
+                    margin: 15px 0 20px 0;
+                }
+
+                .ttxt {
+                    font-size: 40px;
+                    font-weight: 800;
+                    color: $color-blue;
+                    margin: 15px 0 20px 0;
+                }
+
+                .ctxt {
+                    color: #5c5c5c;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .itm01 {
+            border-bottom: 10px solid $color-blue;
+        }
+
+        .itm02 {
+            border-bottom: 10px solid $color-green;
+        }
+
+        .itm03 {
+            border-bottom: 10px solid $color-yellow;
+        }
+
+    }
+}
+
+.MainMedical {
+    margin-top: 380px;
+    padding: 80px 0;
+
+    .MediSlide {
+        .itm {
+            position: relative;
+            height: 470px;
+
+            .txt {
+                position: absolute;
+                top: 47%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                text-align: center;
+
+                .btxt {
+                    font-size: 48px;
+                    font-weight: 500;
+                    padding-top: 75px;
+                }
+
+                .stxt {
+                    font-size: 18px;
+                    margin: 15px 0;
+                }
+            }
+        }
+
+        .itm01 {
+            .btxt {
+                background: url(../images/center-icon01.png)no-repeat center top;
+            }
+        }
+
+        .itm02 {
+            .btxt {
+                background: url(../images/center-icon02.png)no-repeat center top;
+            }
+        }
+
+        .itm03 {
+            .btxt {
+                background: url(../images/center-icon03.png)no-repeat center top;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        margin-bottom: 60px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 34px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.0);
+        border: 1px solid #fff;
+        border-radius: 100%;
+
+    }
+
+    .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #115b95;
+        border: none;
+    }
+}
+
+.Footer {
+    background: $color-ft02;
+
+    .ft {
+        display: flex;
+        gap: 30px;
+
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+}

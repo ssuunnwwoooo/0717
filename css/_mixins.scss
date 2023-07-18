@@ -6,3 +6,10 @@ $size-gap : 30px;
     margin: 0 auto;
     padding: 0 $size-gap/2;
 }
+
+// 태블릿 : 최소'태블릿'사이즈부터 ~ 최대 '태블릿에서 노트북'사이즈까지
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-laptopToTablet - 1px}) {
+        @content;
+    }
+}
