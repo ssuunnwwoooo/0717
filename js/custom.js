@@ -1,6 +1,7 @@
 
 const MainSlide = new Swiper('.MainSlide', {
     loop: true,
+    effect: 'fade',
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -23,3 +24,14 @@ const MediSlide = new Swiper('.MediSlide', {
 })
 
 
+$(document).ready(function () {
+    $('ul.tabs li').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
+    });
+})

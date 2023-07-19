@@ -14,6 +14,17 @@
 
 <body>
     <div class="wrap">
+
+        <div class="quick_menu">
+            <ul>
+                <li><a href=""><span>온라인<br />예약</span></a></li>
+                <li><a href=""><span>카카오톡<br />상담</span></a></li>
+                <li><a href=""><span>네이버<br />예약</span></a></li>
+                <li><a href=""><span>오시는길</span></a></li>
+
+            </ul>
+        </div>
+
         <header class="Header">
             <div class="top">
                 <ul class="inner">
@@ -142,47 +153,134 @@
                     <div class="swiper-pagination"></div>
             </section>
 
-            <section class="ov">
-                <div class="fl">
-                    <div class="press">
-                        <h2>언론보도</h2>
-                        <a href="/"><i class="bi bi-plus-lg"></i></a>
+
+            <section class="TabMenu">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">메뉴01</li>
+                    <li class="tab-link current" data-tab="tab-2">메뉴02</li>
+                    <li class="tab-link current" data-tab="tab-3">메뉴03</li>
+                </ul>
+
+                <div class="container">
+                    <div id="tab-1" class="tab-content current">
+                        <div class="notice_menu">
+                            내용
+                        </div>
                     </div>
-                    <div class="society"></div>
+                    <div id="tab-2" class="tab-content current">
+                        <div class="notice_menu">
+                            내용
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-content current">
+                        <div class="notice_menu">
+                            내용
+                        </div>
+                    </div>
                 </div>
-                <div class="fr">
-                    <div class="news"></div>
-                    <div class="kakao"></div>
-                    <div class="counsel"></div>
-                    <div class="locat"></div>
+            </section>
+
+
+            <section class="MainNotice">
+                <div class="fl inner">
+                    <div class="press">
+                        <div class="title">
+                            <h2>언론보도</h2>
+                            <a href="/"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                        <div class="press_wrap">
+                            <div class="img">
+                                <img src="./images/d_thumb_1672070932.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <p class="btxt">[강진희 원장 건강칼럼]</p>
+                                <p class="stxt">극복 어려운 만성위축성위염, 담적치료로 원인부터 해결</p>
+                                <p class="ctxt">2022.12.26</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="society">
+                        <div class="title">
+                            <h2>공지사항</h2>
+                            <a href="/"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                        <ul class="soc_wrap">
+                            <li>
+                                <a href="">
+                                    <strong>[공지] 2023년 삼일절 휴진안내</strong>
+                                    <span>2023.02.28</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2023년 1월 구정 연휴 휴진 안내</strong>
+                                    <span>2023.01.10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>부산위담한의원 홈페이지가 리뉴얼 오픈되었습니다.</strong>
+                                    <span>2022.12.26</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr inner">
+                    <div class="box news">
+                        <a href=""><img src="./images/news_bg_img_text.png" alt=""></a>
+                    </div>
+                    <div class="box kakao">
+                        <img src="./images/kakao-ico.jpg" alt="">
+                        <div class="txt">
+                            <p class="btxt">
+                                빠르고 편한 카카오톡 <span>전문의 상담</span>
+                            </p>
+                            <div class="stxt">
+                                <a href="">ID <span>부산위담한의원 <i class="bi bi-search"></i></span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box counsel">
+                        <a href=""><img src="./images/counsel_bg_img_text.png" alt=""></a>
+                    </div>
+                    <div class="box locat">
+                        <div class="txt">
+                            <div class="btxt">찾아오시는길</div>
+                            <p class="stxt">부산광역시 부산진구 서면로 74,6층</p>
+                        </div>
+                        <a href=""><img src="./images/cont_icon_loca.jpg" alt=""></a>
+                    </div>
                 </div>
             </section>
         </main>
         <footer class="Footer">
-            <ul class="ft inner">
-                <li><a href="">이용약관</a></li>
-                <li><a href="">개인정보처리방침</a></li>
-                <li><a href="">환자권리장전</a></li>
-                <li><a href="">이메일 무단 수집거부</a></li>
-                <li><a href="">인트라넷</a></li>
-            </ul>
+            <div class="ft_top">
+                <ul class="ft inner">
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">환자권리장전</a></li>
+                    <li><a href="">이메일 무단 수집거부</a></li>
+                    <li><a href="">인트라넷</a></li>
+                </ul>
+            </div>
 
-            <div class="ft_bottom">
-                <div class="f_info inner">
-                    <span>부산위담한의원</span>
+            <div class="ft_bottom inner">
+                <div class="f_info">
+                    <strong>부산위담한의원</strong>
                     <span>대표자 : 강진희</span>
                     <span>사업자등록번호 : 605-92-34649</span>
                     <span>주소 : 부산광역시 부산진구 서면로 74(부전동) 아이온시티6층</span>
                     <span>대표전화: 051-608-9600</span>
-                    <span>Copyright &copy; 위담한의원 부산점. All Right Reserved.</span>
+                    <div class="copy">Copyright &copy; 위담한의원 부산점. All Right Reserved.</div>
                 </div>
-                <div class="f_link inner">
-                    <dl>
-                        <dt>FOLLOW US</dt>
-                        <dd><a href=""><img src="./images/f-sns01.png" alt=""></a></dd>
-                        <dd><a href=""><img src="./images/f-sns02.png" alt=""></a></dd>
-                        <dd><a href=""><img src="./images/f-sns03.png" alt=""></a></dd>
-                    </dl>
+                <div class="f_link">
+                    <ul>
+                        <li><a href=""><img src="./images/f-sns01.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/f-sns02.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/f-sns03.png" alt=""></a></li>
+                    </ul>
                 </div>
             </div>
 
