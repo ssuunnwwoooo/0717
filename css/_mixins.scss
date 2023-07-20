@@ -1,10 +1,10 @@
 $sixe-pc : 1200px;
-$size-gap : 30px;
+
 
 @mixin inner () {
     max-width: $sixe-pc;
     margin: 0 auto;
-    padding: 0 $size-gap/2;
+    padding: 0 15px;
 }
 
 // 태블릿 : 최소'태블릿'사이즈부터 ~ 최대 '태블릿에서 노트북'사이즈까지
