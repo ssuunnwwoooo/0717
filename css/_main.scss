@@ -732,11 +732,6 @@
                 opacity: 0;
                 transition: 0.5s;
 
-
-                li {
-                    margin: 10px 0;
-                }
-
                 &.on {
                     // b
                     opacity: 1;
@@ -751,8 +746,8 @@
                     font-size: 18px;
                     font-weight: 500;
                     //b
-                    border-bottom: 1px solid #ddd;
-                    padding: 10px 10px;
+
+                    padding: 10px 15px;
 
                     img {
                         // b
@@ -797,6 +792,7 @@
                     visibility: visible;
                     // b
                     display: none;
+                    height: auto;
                 }
             }
 
@@ -805,16 +801,18 @@
                 // b
                 position: static;
                 width: 100%;
-                height: 87%;
+                height: auto;
                 opacity: 1;
                 transition: none;
                 visibility: visible;
                 text-align: left;
                 line-height: 25px;
                 background: #eff0f3;
+                border-bottom: 1px solid #ddd;
 
                 li {
-                    padding: 10px 0 0 0;
+                    padding: 20px 0 0 10px;
+
                 }
 
                 &:hover {
@@ -1244,6 +1242,7 @@
         transition: 0.3s;
 
         &.on {
+            top: 30px;
             transform: rotate(-90deg);
             color: $color-top02;
         }

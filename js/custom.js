@@ -24,10 +24,10 @@ const MediSlide = new Swiper('.MediSlide', {
 });
 
 $(function () {
-    $('.gnb>ul>li>a').on('click', function (e) {
-        if ($('.gnb').hadClass('on')) {
+    $('.gnb>li>a').on('click', function (e) {
+        if ($('.gnb').hasClass('on')) {
             e.preventDefault();
-        }
+        };
         $(this).next().stop().slideDown();
         $(this).parent().siblings().find('.sub').stop().slideUp();
     });

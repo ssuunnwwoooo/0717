@@ -592,9 +592,6 @@ body {
     opacity: 0;
     transition: 0.5s;
   }
-  .Header .header_wrap .gnb li {
-    margin: 10px 0;
-  }
   .Header .header_wrap .gnb.on {
     opacity: 1;
     right: 0;
@@ -605,8 +602,7 @@ body {
     padding: 30px 30px;
     font-size: 18px;
     font-weight: 500;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 10px;
+    padding: 10px 15px;
   }
   .Header .header_wrap .gnb > li img {
     display: none;
@@ -639,20 +635,22 @@ body {
     height: 250px;
     visibility: visible;
     display: none;
+    height: auto;
   }
   .Header .header_wrap .sub {
     position: static;
     width: 100%;
-    height: 87%;
+    height: auto;
     opacity: 1;
     transition: none;
     visibility: visible;
     text-align: left;
     line-height: 25px;
     background: #eff0f3;
+    border-bottom: 1px solid #ddd;
   }
   .Header .header_wrap .sub li {
-    padding: 10px 0 0 0;
+    padding: 20px 0 0 10px;
   }
   .Header .header_wrap .sub:hover {
     background: #eff0f3;
@@ -951,6 +949,7 @@ body {
     transition: 0.3s;
   }
   .mopen.on {
+    top: 30px;
     transform: rotate(-90deg);
     color: #444BAB;
   }
