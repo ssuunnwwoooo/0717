@@ -190,11 +190,9 @@ body {
 }
 
 .MainContent {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -30%;
+  position: relative;
   z-index: 5;
+  margin-top: -100px;
 }
 .MainContent .content_wrap {
   display: flex;
@@ -259,8 +257,7 @@ body {
 }
 
 .MainMedical {
-  margin-top: 380px;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .MainMedical .MediSlide .itm {
   position: relative;
