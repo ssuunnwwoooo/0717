@@ -1,3 +1,7 @@
+.inner {
+    border: 1px solid red;
+}
+
 .quick_menu {
     position: fixed;
     z-index: 999;
@@ -543,7 +547,7 @@
             font-size: 15px;
             font-weight: 300;
             color: #fff;
-            padding: 25px 0;
+            padding: 25px 15px;
 
             strong {
                 font-weight: 600;
@@ -554,7 +558,7 @@
     .ft_bottom {
         display: flex;
         gap: 30px;
-        padding: 30px 0;
+        padding: 30px 15px;
         justify-content: space-between;
 
         .f_info {
