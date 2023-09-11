@@ -37,10 +37,6 @@ body {
   padding: 0 15px;
 }
 
-.inner {
-  border: 1px solid red;
-}
-
 .quick_menu {
   position: fixed;
   z-index: 999;
